@@ -1,0 +1,55 @@
+.formMenu {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--secondary);
+}
+
+.formMenu button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+
+.formMenu label {
+  display: inline-block;
+  width: 90px;
+}
+
+.container-prices {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.btn-add-menu {
+  margin: 0.5rem;
+  display: block;
+  background: rgb(5, 228, 90);
+}
+
+.add-price {
+  background: rgb(4, 129, 212);
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.delete-price {
+  background-color: var(--accent);
+  margin: 0.5rem;
+}
+
+cite {
+  color: var(--accent);
+  display: block;
+}
+
+.price-price {
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
+}

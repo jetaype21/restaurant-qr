@@ -1,0 +1,90 @@
+.menu-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.cont {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container-form-menu {
+  margin-top: 20vh;
+  width: 90%;
+  max-width: 800px;
+}
+
+.menus-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.menu-container section {
+  background-color: rgb(4, 40, 73);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+
+.menu-container .btn-init {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  background-color: var(--accent);
+}
+
+.btn-qr-init {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-qr-init a {
+  background-color: red;
+}
+
+.btn-init button {
+  background-color: transparent;
+  color: white;
+}
+
+.btn {
+  padding: 0.4em;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  width: 100px;
+}
+
+.btn-active {
+  background: rgb(30, 133, 73);
+}
+.btn-detail {
+  background: rgb(0, 77, 128);
+}
+
+.menu-items button:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .menus-container {
+    justify-content: center;
+  }
+}

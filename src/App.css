@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: var(--text);
+  font-family: var(--title-style);
+}
+button {
+  border: none;
+  outline: none;
+}
+
+:root {
+  --text: #daf1e2;
+  --background: #010402;
+  --primary: #225d53;
+  --secondary: #160812;
+  --accent: #ab3f51;
+  --content-style: "Arapey", serif;
+  --title-style: "Playfair Display", serif;
+}
+
+body {
+  padding: 2rem;
+  background-image: url("./assets/fondo.svg");
+  font-family: var(--content-style);
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  /* font-size: clamp(1.5rem, 2.5rem, 3rem);
+  */
+  /* 
+    14 = tamaño de letra más pequeño
+    18 = tamaño de letra más grande
+    300 = tamaño de viewport más pequeño
+    1400 = tamaño de viewport más grande
+  */
+  /* font-size: calc(14px + (18 -14) * ((100vw - 300px) / (1400 - 300))); */
+  /* font-size: calc(12px + (24 -12) * ((100vw - 200px) / (1600 - 200))); */
+  /* font-size: calc(18px (40 - 18) * ((100vw - 400px) / (1400 - 400px))); */
+  max-width: 60%;
+  margin: auto;
+  color: var(--text);
+}
+
+.title span {
+  font-family: var(--title-style);
+  color: var(--accent);
+}
+
+.logout {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--text);
+  font-family: var(--title-style);
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+}

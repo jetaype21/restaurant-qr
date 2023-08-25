@@ -1,0 +1,19 @@
+.form-container {
+  margin: 2rem auto 0;
+  width: 80%;
+  max-width: 600px;
+}
+
+.start-title {
+  color: var(--secondary);
+  font-size: 1.4rem;
+}
+
+.btn-handle-type {
+  display: block;
+  margin: 1rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text);
+  font-family: var(--textStyle);
+  font-size: 1rem;
+}
